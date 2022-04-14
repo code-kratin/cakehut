@@ -1,0 +1,215 @@
+body{
+    /* height: 70vw; */
+    font-family: 'Kanit';
+}
+#order-head{
+    font-size: 3rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+.container{
+    margin-top: 30px;
+    /* height: 30rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container form{
+    height: 30rem;
+    width: 30rem;
+    background-color: white;
+    border-radius: 10px;
+}
+.container form .frm{
+    margin-top: 30px;   
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    gap: 40px;
+}
+#form1{
+    margin-top: 10px; 
+}
+#form3 h1{
+    margin-bottom: -25px;
+}
+.container form .active{
+    display: flex;
+}
+
+.ad-ons #weight{
+    padding: 0px 90px;
+}
+form .frm input{
+    font-size: large;
+    border: none;      
+    border-bottom: 1px solid black;
+    outline: none;
+    padding: 5px 10px;
+    padding-right: 10rem;
+}
+
+form .frm input:focus::placeholder{
+    opacity: 0;
+}
+
+
+.name-on-cake{
+    position: relative;
+}
+
+form .frm .name-on-cake label{
+    position: absolute;
+    bottom: 25px;
+    color: #ff105f;
+    display: none;
+}
+
+.show#weight {
+    display: block;
+}
+.show#name-on-cake {
+    display: block;
+}
+
+#form3 div{
+    position: relative;
+}
+#form3 div label{
+    position: absolute;
+    bottom: 25px;
+    color: #ff105f;
+    display: none;
+}
+.show#name-label {
+    display: block;
+}
+.show#phoneno-label {
+    display: block;
+}
+.show#email-label {
+    display: block;
+}
+.show#address-label {
+    display: block;
+}
+
+
+#Price, #Cake{
+    display: none;
+}
+.ad-ons label{
+    font-size: 1.3rem;
+    color: #ff105f;
+}
+
+form .frm select{
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;        
+    font-size: large;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    padding-right: 5rem;
+}
+
+.frm .price div span{
+    font-size: 1.5rem;
+}
+
+
+.btn-box{
+    display: flex;
+    gap: 5rem;
+    /* width: 100%; */
+    margin: 2rem auto;
+    text-align: center;
+}
+button{
+    width: 10rem;
+    height: 3rem;
+    /* padding: 5px 50px; */
+    color: #fff;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+#form3 button{
+    margin-top: -20px;
+}
+footer{
+    margin-top: 15rem;
+}
+
+
+
+
+
+#status{
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+    position: relative;
+}
+#status.success {
+      font-size: 1.2rem;
+    background-color: rgb(153, 255, 0);
+    color: black;
+    animation: status 4s ease forwards;
+}
+#status.error {
+    background-color: rgb(250, 129, 92);
+    color: black;
+    animation: status 4s ease forwards;
+}
+@keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .container form{
+        height: 30rem;
+        width: 30rem;
+    }
+    html{
+        font-size: 12px;
+    }
+    .container form .frm{
+        margin-top: 10px;
+        gap: 20px;
+    }
+    .ad-ons #weight{
+        padding: 0px 83px;
+    }
+    ::placeholder{
+        font-size: 1.2rem;
+    }
+    #form3 button{
+        margin-top: -15px;
+    }
+    #form3 h1{
+        margin-bottom: -10px;
+    }
+}

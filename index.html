@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>CakeHut</title>
+    <link rel="shortcut icon" href="logo.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="chinu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="barmenu" onclick="func(this)">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            <div class="menu">
+                <li class="navtext"> <a href="https://cakehut.onrender.com">Home</a></li>
+                <li class="navtext"><a href="about.html">About</a></li>
+                <li class="navtext"><a href="cakes.html">Order</a></li>
+                <li class="navtext"><a href="contact.html">Contact</a></li>
+            </div>
+        </div>
+        <nav id="navbar">
+            <div class="channelname">
+                <a href="https://cakehut.onrender.com"><img id="logo" src="logo.jpg" alt=""></a>
+                <span id="name">Cakehut</span>
+            </div>
+            <div class="list">
+                <li class="navtext"> <a href="https://cakehut.onrender.com">Home</a></li>
+                <li class="navtext"><a href="about.html">About</a></li>
+                <li class="navtext"><a href="cakes.html">Order</a></li>
+                <li class="navtext"><a href="contact.html">Contact</a></li>
+            </div>
+
+            <div id="sociallinks">
+                <a href="https://www.instagram.com/cakehut_bakery/" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://www.facebook.com/cakehutbakery.in/" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://youtube.com/channel/UCPLHGo_gv-m-rS2KxMyQW8A" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--radio buttons end-->
+            <!--slide images start-->
+            <div class="slide first">
+
+                <div id="home" class="sld">
+                    <div id="headname">
+                        <h2>C</h2>
+                        <h2>A</h2>
+                        <h2>K</h2>
+                        <h2>E</h2>
+                        <h2></h2>
+                        <h2>H</h2>
+                        <h2>U</h2>
+                        <h2>T</h2>
+                    </div>
+                    <!-- <div id="desc">
+                        <span id="tagline">Cakes to cuddle your taste</span>
+                    </div> -->
+                </div>
+            </div>
+            <div class="slide">
+                <div class="sld second"></div>
+                <!-- <img src="https://digitalcolorinc.com/wp-content/uploads/2016/02/cake_slider.jpg" alt=""> -->
+            </div>
+            <div class="slide">
+                <div class="sld third"></div>
+                <!-- <img src="https://media.istockphoto.com/photos/vanilla-sponge-cake-with-cream-and-white-chocolate-decorate-sliced-picture-id880443720?b=1&k=20&m=880443720&s=612x612&w=0&h=NrolKS5nxFUzPUfHCb85hEBfkYpsAWFxw77SGbYirDc=" alt=""> -->
+            </div>
+            <div class="slide">
+                <div class="sld fourth"></div>
+                <!-- <img src="https://digitalcolorinc.com/wp-content/uploads/2016/02/cake_slider.jpg" alt=""> -->
+            </div>
+            <!--slide images end-->
+
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1" id="auto1"></div>
+                <div class="auto-btn2" id="auto2"></div>
+                <div class="auto-btn3" id="auto3"></div>
+                <div class="auto-btn4" id="auto4"></div>
+            </div>
+            <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+            <label for="radio1" id="man1" class="manual-btn"></label>
+            <label for="radio2" id="man2" class="manual-btn"></label>
+            <label for="radio3" id="man3" class="manual-btn"></label>
+            <label for="radio4" id="man4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+
+    <h2 class="heading">Experience Flavours</h2>
+    <div class="flavours">
+        <a href="chocolate.html" class="flavour-card">
+            <img src="https://media.bakingo.com/chocolate@2x_0.png?tr=w-184,dpr-1.5,q-70" alt="">
+            <h3>Chocolate</h3>
+            <span>For Choco Addicts</span>
+        </a>
+        <a href="exotic.html" class="flavour-card">
+            <img src="https://media.bakingo.com/coffee@2x_2_0.png?tr=w-184,dpr-1.5,q-70" alt="">
+            <h3>Exotic</h3>
+            <span>For special occasions</span>
+        </a>
+        <a href="blackforest.html" class="flavour-card">
+            <img src="https://media.bakingo.com/black_forest@2x_0.png?tr=w-184,dpr-1.5,q-70" alt="">
+            <h3>Oreo</h3>
+            <span>The all time favorite</span>
+        </a>
+        <a href="butterscotch.html" class="flavour-card">
+            <img src="https://media.bakingo.com/butterscotch@2x_0.png?tr=w-184,dpr-1.5,q-70" alt="">
+            <h3>Butterscotch</h3>
+            <span>For Candy Fans</span>
+        </a>
+        <a href="pineapple.html" class="flavour-card">
+            <img src="https://media.bakingo.com/vanilla@2x_2_0.png?tr=w-184,dpr-1.5,q-70" alt="">
+            <h3>Pineapple</h3>
+            <span>The evergreen</span>
+        </a>
+        <a href="vanilla.html" class="flavour-card">
+            <img src="https://media.bakingo.com/exotics_pastry@2x_0.png?tr=w-184,dpr-1.5,q-70" alt="">
+            <h3>Vanilla</h3>
+            <span>An ideal complement</span>
+        </a>
+
+    </div>
+
+    <h2 class="heading">Delicious Cakes</h2>
+    <div class="cakes">
+        <a href="cake1.html" class="flavour-card cake-card">
+            <img src="IMG_20220413_190417.jpg" alt="">
+            <span id="cakename">Pineapple Cream Cake</span>
+            <h3>&#8377;280</h3>
+        </a>
+        <a href="cake2.html" class="flavour-card cake-card">
+            <img src="IMG_20220413_190402.jpg" alt="">
+            <span id="cakename">Round shape Butterscotch Cake</span>
+            <h3>&#8377;290</h3>
+        </a>
+        <a href="cake3.html" class="flavour-card cake-card">
+            <img src="IMG_20220413_190333.jpg" alt="">
+            <span id="cakename">Vanilla Syrup Cake</span>
+            <h3>&#8377;280</h3>
+        </a>
+        <a href="cake4.html" class="flavour-card cake-card">
+            <img src="IMG_20220413_190312.jpg" alt="">
+            <span id="cakename">Chocolate Truffle Cake</span>
+            <h3>&#8377;299</h3>
+        </a>
+        <a href="cake5.html" class="flavour-card cake-card">
+            <img src="IMG_20220413_190258.jpg" alt="">
+            <span id="cakename">Butterscotch Crust Cake</span>
+            <h3>&#8377;290</h3>
+        </a>
+        <a href="cake6.html" class="flavour-card cake-card">
+            <img src="IMG_20220413_190059.jpg" alt="">
+            <span id="cakename">Chocolate Oreo Cake</span>
+            <h3>&#8377;299</h3>
+        </a>
+        <a href="cake7.html" class="flavour-card cake-card">
+            <img src="IMG_20220413_190047.jpg" alt="">
+            <span id="cakename"> Two tier Chocolate Cake</span>
+            <h3>&#8377;299</h3>
+        </a>
+        <a href="cake8.html" class="flavour-card cake-card">
+            <img src="IMG_20220413_190028.jpg" alt="">
+            <span id="cakename">Chocolacious Cream Cake </span>
+            <h3>&#8377;299</h3>
+        </a>
+        <a href="cake9.html" class="flavour-card cake-card">
+            <img src="IMG_20220413_190015.jpg" alt="">
+            <span id="cakename">Pineapple Round Cake</span>
+            <h3>&#8377;280</h3>
+        </a>
+        <a href="cake10.html" class="flavour-card cake-card">
+            <img src="IMG_20220413_190116.jpg" alt="">
+            <span id="cakename">Delicious Butterscotch Cake</span>
+            <h3>&#8377;290</h3>
+        </a>
+    </div>
+    <a href="cakes.html" class="seemore">
+        <p>See all Cakes</p>
+    </a>
+
+    <h2 class="heading">Customer Reviews</h2>
+    <div class="customers">
+        <figure>
+            <div class="cus-slide">
+                <div class="cus-sld">
+                    <div class="cus-name">
+                        <img src="https://res.cloudinary.com/twenty20/private_images/t_low-crop/photosp/27c0d7e9-887a-4908-9d90-28f40efb47ad/27c0d7e9-887a-4908-9d90-28f40efb47ad.jpg" alt="">
+                        <h2>Akshat Laud</h2>
+                    </div>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Yummilicious!!!! Balanced Taste, Cake Sponge was good, Cream was fresh and just about right sweet. We loved it!!!</p>
+                </div>
+            </div>
+            <div class="cus-slide">
+                <div class="cus-sld">
+                    <div class="cus-name">
+                        <img src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1608918234000/photosp/e3914716-76b2-436e-8f65-6d201efdfa34/stock-photo-selfie-happy-face-road-view-smiling-indian-e3914716-76b2-436e-8f65-6d201efdfa34.jpg"
+                            alt="">
+                        <h2>Hrishish Deshmukh</h2>
+                    </div>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>It was really tasty.. my 3 yr old kid never have cakes .. but this cake she was jus enjoying.. it's simply superb.. delivery cake every thing was on time..</p>
+                </div>
+            </div>
+            <div class="cus-slide">
+                <div class="cus-sld">
+                    <div class="cus-name">
+                        <img src="https://scontent.fbho4-1.fna.fbcdn.net/v/t31.18172-8/1599465_362403350581897_8892155370115934797_o.jpg?_nc_cat=103&ccb=1-5&_nc_sid=174925&_nc_ohc=QSkHzCAu484AX8A8Cd-&tn=XMRXbmAU6lxuXRi1&_nc_ht=scontent.fbho4-1.fna&oh=00_AT-SNgso6IzYltAEB9fU3EgZQYo6JcHyJGlxWZYaWZCsSA&oe=624E3A51" alt="">
+                        <h2>Giovanna Cellucci </h2>
+                    </div>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>I ordered dark magic for my friend and he loved the cake so so much.Cake was exactly the same as shown in the picture. Will definitely order again from cakehut. Thankyou cakehut for sending us the happiness!</p>
+                </div>
+            </div>
+            <div class="cus-slide">
+                <div class="cus-sld">
+                    <div class="cus-name">
+                        <img src="https://www.pinpng.com/pngs/m/127-1275400_paul-circle-testimonial-male-face-icon-png-transparent.png"
+                            alt="">
+                        <h2>Abhijeet Mishra</h2>
+                    </div>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>it was a lil surprise to my younger sis n my brother in law and trust me they liked it very much especially d cake.... she said d cake was awesum she loved it so badly that she ate it whole night all alone</p>
+                </div>
+            </div>
+            <div class="cus-slide">
+                <div class="cus-sld">
+                    <div class="cus-name">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTErAxdSStTmlseC1yE2OAOzGmzShk9Kmym2zE_uz0YJkjyGPLd0_zch-wWv2BMssqGqeQ&usqp=CAU"
+                            alt="">
+                        <h2>Anand Sharma</h2>
+                    </div>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>Absolutely loved the cake! Great quality and texture of chocolate. Good quality packaging and timely delivery! Loved it! Thanks</p>
+                </div>
+            </div>
+            <div class="cus-slide">
+                <div class="cus-sld">
+                    <div class="cus-name">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu2kPwGCocz3PpZKwgNqOc0txn7YkixgXqTA&usqp=CAU"
+                            alt="">
+                        <h2>Akshat Laud</h2>
+                    </div>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Flowers and the packaging was okay but the cake was an absolute delight. Just loved it!!</p>
+                </div>
+            </div>
+            <div class="cus-slide">
+                <div class="cus-sld">
+                    <div class="cus-name">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoPczo_vgoWlnlzBDeqS-pne-zeV3UZ3j0UA&usqp=CAU"
+                            alt="">
+                        <h2>Hritik Roshan</h2>
+                    </div>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>It was my first time ordering a cake online and Bakingo turned out to be a great choice. Cake was fresh and delicious with low on sugar. Packaging was apt and was delivered timely.</p>
+                </div>
+            </div>
+        </figure>
+    </div>
+
+
+    <div id="quote">
+        <p data-aos="zoom-in">
+            “Cakes are special. Every birthday, every celebration ends with something sweet, a cake, and people
+            remember. It’s all about the memories.”
+        </p>
+        <p id="author"> — Buddy Valastro</p>
+    </div>
+
+    <!-- <h1 id="contact-head" class="contact-header">Contact Us</h1>
+    <h3 id="contact-head2">I love hearning from you, here are some of the ways to get in touch with me!</h3>
+    <div class="contact-section" id="contact">
+        <div class="contact">
+            <i class="material-icons icons" data-aos="zoom-out">phone</i>
+            <h3>Call me</h3>
+            <div>+91-834934610</div>
+        </div>
+        <div class="contact">
+            <i class="material-icons icons" data-aos="zoom-out">mail</i>
+            <h3>Mail me</h3>
+            <div>chirayusingh15@gmail.com</div>
+        </div>
+        <div class="contact">
+            <i class="material-icons icons" data-aos="zoom-out">place</i>
+            <h3>Meet me</h3>
+            <div>Narayan Nagar, Bhopal</div>
+        </div>
+    </div>
+    <div class="social-media">
+        <a href="https://www.instagram.com/cs_roxstar/" target="_blank"><img
+                src="https://www.seeklogo.net/wp-content/uploads/2016/05/instagram-icon-logo-vector-download.jpg"
+                alt=""></a>
+        <a href="https://www.facebook.com/chirag.deep.39" target="_blank"><img
+                src="https://image.similarpng.com/very-thumbnail/2020/04/Popular-Logo-facebook-icon-png.png" alt=""></a>
+        <a href="https://www.youtube.com/channel/UCjoIZJVkCU9s7rwhSNzAIdg" target="_blank"><img
+                src="https://www.pikpng.com/pngl/m/60-600155_youtube-icon-grey-png-png-download-circle-clipart.png"
+                alt=""></a>
+    </div> -->
+    <footer>
+        <div class="waves">
+            <div id="wave1" class="wave"></div>
+            <div id="wave2" class="wave"></div>
+            <div id="wave3" class="wave"></div>
+        </div>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/cakehut_bakery/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            <li><a href="https://www.facebook.com/cakehutbakery.in/">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li><a href="https://youtube.com/channel/UCPLHGo_gv-m-rS2KxMyQW8A">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="men">
+            <li><a href="https://cakehut.onrender.com">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cakes.html">Our Services</a></li>
+        </ul>
+        <ul class="men">
+            <li onclick="terms()">
+                <div id="terms">
+                    <h1>Terms of Use</h1>
+                    <ion-icon name="close-outline"></ion-icon>
+                    <ul>
+                        <li>Any contract for the supply of Food Delivery from this Website is between you and our Participating Suppliers; for the supply of Goods or Services from this website contact is between you and Bakingo. You agree to take particular care when providing us with your details and warrant that these details are accurate and complete at the time of ordering. You also warrant that the credit or debit card details that you provide are for your own credit or debit card and that you have sufficient funds to make the payment.</li>
+                        <li>Food Delivery, Goods and Services purchased from this Website are intended for your use only and you warrant that any Goods purchased by you are not for resale and that you are acting as principal only and not as agent for another party when receiving the Services.</li>
+                        <li> Please note that some of our Goods may be suitable for certain age ranges only. You should check that the product you are ordering is suitable for the intended recipient.</li>
+                        <li>When ordering from this Website you may be required to provide aphone number, e-mail address and password. You must ensure that you keep the combination of these details secure and do not provide this information to a third party.</li>
+                        <li>We will take all reasonable care, in so far as it is in our power to do so, to keep the details of your order and payment secure, but in the absence of negligence on our part we cannot be held liable for any loss you may suffer if a third party procures unauthorized access to any data you provide when accessing or ordering from the Website.</li>
+                        <li>Any order that you place with us is subject to product availability, delivery capacity and acceptance by us and the Participating Suppliers.When you place your order online, we will send you an email to confirm that we have received it.This email confirmation will be produced automatically so that you have confirmation of your order details.You must inform us immediately if any details are incorrect.The fact that you receive an automatic confirmation does not necessarily mean that either we or the Participating Suppliers will be able to fill your order.Once we have sent the confirmation email we will check availability and delivery capacity.</li>    
+                        <li>If the ordered Food and delivery capacity is available, the Participating Supplier will accept the contract and confirm it to Bakingo.If the details of the order are correct, the contract for the Food Delivery, Goods or Services will be confirmed by email or text message(SMS).</li>
+                        <li> The confirmation message/ email will specify items ordered along with a receipt of payment.</li>
+                        <li>If the Food Delivery and / or Goods are not available or if there is no delivery capacity, we will also let you know by email or text message (SMS) or phone call.
+
+                        </li>
+                    </ul>
+                </div> Terms of use
+            </li>
+            <li onclick="privacy()">
+                <div id="privacy">
+                    <h1>Privacy Policy</h1>
+                    <ion-icon name="close-outline"></ion-icon>
+                    <p>We collect your email address in order to:
+                        Send information, respond to inquiries, and/or other requests or questions.
+                        Process orders and to send information and updates pertaining to orders.
+                        Send you additional information related to your product and/or service.
+                        Market to our mailing list or continue to send emails to our clients after the original
+                        transaction has occurred.
+                        We also allow users to unsubscribe by using the link at the bottom of each email.If at any time
+                        you would like to unsubscribe from receiving future emails, you can email us at
+                        CakeHut@gmail.com</p>
+                </div> Privacy Policy
+            </li>
+        </ul>
+        <p>&copy;Copyright Kratin Mourya | Cake Hut | All rights reserved</p>
+    </footer>
+</body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+    }
+    );
+
+    let count = 1;
+    setInterval(() => {
+        let e = document.getElementById('auto' + count);
+        document.getElementById('radio' + count).checked = true;
+        if(document.getElementById('radio'+count).checked=true){
+            document.getElementById('man'+count).style.backgroundColor= "transparent";
+        }
+
+        count++;
+        if (count > 4) {
+            count = 1;
+        }
+    }, 5000);
+
+
+
+
+    let section= document.getElementById("quote");
+    let content= document.querySelector("#author");
+    window.addEventListener("scroll",()=>{
+        const sectionPos= section.getBoundingClientRect().bottom;
+        const screenPos= window.innerHeight;
+        if (sectionPos< screenPos){
+            content.style.animationName="text";
+            content.style.animationDuration="5s";
+            content.style.animationDuration="5s";
+        }
+    })
+
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="chirayu.js"></script>
+
+</html>

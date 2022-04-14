@@ -1,0 +1,139 @@
+.about span{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 8%;
+}
+.about{
+    height: 35vw;
+    display: flex;
+    justify-content: center;
+}
+.about::before{
+    content: "";
+    position: absolute;
+    background-image: url(https://media.bakingo.com/images/aboutus/aboutus-desktop.png);
+    background-size: contain;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    filter: brightness(0.7);
+}
+.about::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    /* height: 65.5%; */
+    height: 31.7vw;
+    width: 100%;
+    background-image: url(wave.png);
+    filter: hue-rotate(120deg);
+    background-size: 100vw 100px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    transform: rotate(180deg);
+    z-index: -10;
+}
+body::before{
+    content: "";
+    position: absolute;
+    background-image: url('https://media.istockphoto.com/vectors/sweet-pastry-cakes-and-desserts-hand-drawn-food-illustrations-vector-id544450084');
+    height: 150%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.05;
+    top: 20rem;
+}
+footer{
+    position: relative;
+    top: 13rem;
+}
+
+.about-text p{
+    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+    margin: 10px 5vw;
+
+}
+.about-text div ul{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.about-text div ul li{
+    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+    margin: 20px 10vw;
+    position: relative;
+    list-style: none;
+}
+.about-text div ul li:nth-child(1):before{
+    content: "1";
+    font-size: 4rem;
+    position: absolute;
+    transform: translateX(-300%);
+    opacity: 0.5;
+}
+.about-text div ul li:nth-child(2):before{
+    content: "2";
+    font-size: 4rem;
+    position: absolute;
+    transform: translateX(-200%);
+    opacity: 0.5;
+}
+.about-text div ul li:nth-child(3):before{
+    content: "3";
+    font-size: 4rem;
+    position: absolute;
+    transform: translateX(-200%);
+    opacity: 0.5;
+}
+/*---------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width:799px){
+    html{
+        font-size: 12px;
+    }
+    body::before{
+        height: 100%;
+    }
+    footer{
+        height: 20rem;
+    }
+    #navbar span{
+        font-size: 2.5rem;
+    }
+    
+}
+@media only screen and (max-width:550px){
+    html{
+        font-size: 8px;
+    }
+    .about::after{
+        display: none;
+    }
+    .about-text p{
+        margin-top: -5px;
+    }
+    #navbar span{
+        font-size: 2.8rem;
+    }
+    footer{
+        height: 25rem;
+    }
+
+    footer{
+        font-size: 1.4rem;
+    }
+    .social-links{
+        gap: 4rem;
+    }
+    .men li, .men li a{
+        font-size: 1.7rem;
+    }
+    .social-links li{
+        font-size: 3rem;
+    }
+}
+

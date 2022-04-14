@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>CakeHut</title>
+    <link rel="shortcut icon" href="logo.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="chinu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body,html{
+        overflow-x: hidden;
+    }
+    body{
+        height: 150vh;
+    }
+    .heading{
+        margin-bottom: 60px;
+    }
+    @media only screen and (max-width: 500px){
+        body{
+            height: 180vh;
+        }
+    }
+</style>
+<body>
+    <div class="nav">
+        <div class="barmenu" onclick="func(this)">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            <div class="menu">
+                <li class="navtext"> <a href="https://cakehut.onrender.com">Home</a></li>
+                <li class="navtext"><a href="about.html">About</a></li>
+                <li class="navtext"><a href="cakes.html">Order</a></li>
+                <li class="navtext"><a href="contact.html">Contact</a></li>
+            </div>
+        </div>
+        <nav id="navbar">
+            <div class="channelname">
+                <a href="https://cakehut.onrender.com"><img id="logo" src="logo.jpg" alt=""></a>
+                <span id="name">Cakehut</span>
+            </div>
+            <div class="list">
+                <li class="navtext"> <a href="https://cakehut.onrender.com">Home</a></li>
+                <li class="navtext"><a href="about.html">About</a></li>
+                <li class="navtext"><a href="cakes.html">Order</a></li>
+                <li class="navtext"><a href="contact.html">Contact</a></li>
+            </div>
+
+            <div id="sociallinks">
+                <a href="https://www.instagram.com/cakehut_bakery/" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://www.facebook.com/cakehutbakery.in/" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://youtube.com/channel/UCPLHGo_gv-m-rS2KxMyQW8A" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <h2 class="heading">Pineapple Cakes</h2>
+    <div class="cakes">
+        <a href="cake1.html" class="flavour-card cake-card">
+            <img src="IMG_20220413_190417.jpg" alt="">
+            <span id="cakename">Pineapple Cream Cake</span>
+            <h3>&#8377;280</h3>
+        </a>
+        <a href="cake9.html" class="flavour-card cake-card">
+            <img src="IMG_20220413_190015.jpg" alt="">
+            <span id="cakename">Pineapple Round Cake</span>
+            <h3>&#8377;280</h3>
+        </a>
+        
+    </div>
+
+
+
+
+    <footer>
+        <div class="waves">
+            <div id="wave1" class="wave"></div>
+            <div id="wave2" class="wave"></div>
+            <div id="wave3" class="wave"></div>
+        </div>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/cakehut_bakery/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            <li><a href="https://www.facebook.com/cakehutbakery.in/">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li><a href="https://youtube.com/channel/UCPLHGo_gv-m-rS2KxMyQW8A">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="men">
+            <li><a href="https://cakehut.onrender.com">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cakes.html">Our Services</a></li>
+        </ul>
+        <ul class="men">
+            <li onclick="terms()">
+                <div id="terms">
+                    <h1>Terms of Use</h1>
+                    <ion-icon name="close-outline"></ion-icon>
+                    <ul>
+                        <li>Any contract for the supply of Food Delivery from this Website is between you and our Participating Suppliers; for the supply of Goods or Services from this website contact is between you and Bakingo. You agree to take particular care when providing us with your details and warrant that these details are accurate and complete at the time of ordering. You also warrant that the credit or debit card details that you provide are for your own credit or debit card and that you have sufficient funds to make the payment.</li>
+                        <li>Food Delivery, Goods and Services purchased from this Website are intended for your use only and you warrant that any Goods purchased by you are not for resale and that you are acting as principal only and not as agent for another party when receiving the Services.</li>
+                        <li> Please note that some of our Goods may be suitable for certain age ranges only. You should check that the product you are ordering is suitable for the intended recipient.</li>
+                        <li>When ordering from this Website you may be required to provide aphone number, e-mail address and password. You must ensure that you keep the combination of these details secure and do not provide this information to a third party.</li>
+                        <li>We will take all reasonable care, in so far as it is in our power to do so, to keep the details of your order and payment secure, but in the absence of negligence on our part we cannot be held liable for any loss you may suffer if a third party procures unauthorized access to any data you provide when accessing or ordering from the Website.</li>
+                        <li>Any order that you place with us is subject to product availability, delivery capacity and acceptance by us and the Participating Suppliers.When you place your order online, we will send you an email to confirm that we have received it.This email confirmation will be produced automatically so that you have confirmation of your order details.You must inform us immediately if any details are incorrect.The fact that you receive an automatic confirmation does not necessarily mean that either we or the Participating Suppliers will be able to fill your order.Once we have sent the confirmation email we will check availability and delivery capacity.</li>    
+                        <li>If the ordered Food and delivery capacity is available, the Participating Supplier will accept the contract and confirm it to Bakingo.If the details of the order are correct, the contract for the Food Delivery, Goods or Services will be confirmed by email or text message(SMS).</li>
+                        <li> The confirmation message/ email will specify items ordered along with a receipt of payment.</li>
+                        <li>If the Food Delivery and / or Goods are not available or if there is no delivery capacity, we will also let you know by email or text message (SMS) or phone call.
+
+                        </li>
+                    </ul>
+                </div> Terms of use
+            </li>
+            <li onclick="privacy()">
+                <div id="privacy">
+                    <h1>Privacy Policy</h1>
+                    <ion-icon name="close-outline"></ion-icon>
+                    <p>We collect your email address in order to:
+                        Send information, respond to inquiries, and/or other requests or questions.
+                        Process orders and to send information and updates pertaining to orders.
+                        Send you additional information related to your product and/or service.
+                        Market to our mailing list or continue to send emails to our clients after the original
+                        transaction has occurred.
+                        We also allow users to unsubscribe by using the link at the bottom of each email.If at any time
+                        you would like to unsubscribe from receiving future emails, you can email us at
+                        CakeHut@gmail.com</p>
+                </div> Privacy Policy
+            </li>
+        </ul>
+        <p>&copy;Copyright Kratin Mourya | Cake Hut | All rights reserved</p>
+    </footer>
+</body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+    }
+    );
+
+
+
+
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="chirayu.js"></script>
+
+</html>
